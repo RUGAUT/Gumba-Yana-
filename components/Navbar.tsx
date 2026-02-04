@@ -23,10 +23,14 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className={`glass-card rounded-2xl px-8 h-20 flex justify-between items-center ${scrolled ? 'bg-black/60 border-orange-500/20 shadow-lg shadow-orange-950/20' : 'bg-transparent border-transparent'}`}>
           <div className="flex-shrink-0 flex items-center space-x-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform shadow-lg shadow-orange-900/40">
-              🌳
+            <div className="h-12 w-auto overflow-hidden rounded-lg transition-transform group-hover:scale-105 duration-300">
+              <img 
+                src="./LogoFormatHorizental.jpeg" 
+                alt="Gümba Yana Logo" 
+                className="h-full w-auto object-contain"
+              />
             </div>
-            <span className="text-xl font-black tracking-tighter uppercase">
+            <span className="text-xl font-black tracking-tighter uppercase hidden sm:inline-block">
               GÜMBA <span className="text-orange-500">YANA</span>
             </span>
           </div>

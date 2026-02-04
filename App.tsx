@@ -63,8 +63,8 @@ const App: React.FC = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-48 pb-32 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center relative z-10 flex flex-col items-center">
+      <section className="relative pt-48 pb-32 px-6 overflow-hidden text-left">
+        <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
           <div className="inline-block px-4 py-1.5 mb-10 bg-orange-600/10 text-orange-400 text-[10px] font-black tracking-[0.4em] uppercase rounded-full border border-orange-500/20 animate-fade-in">
             Studio d'Expériences Ludiques & Gamification
           </div>
@@ -92,20 +92,28 @@ const App: React.FC = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-orange-600/5 blur-[120px] rounded-full z-0"></div>
       </section>
 
-      {/* Section ADN */}
-      <section id="about" className="py-40 px-6 bg-black/30 relative scroll-mt-20 overflow-hidden">
+      {/* Section ADN (About) with Vertical Logo */}
+      <section id="about" className="py-40 px-6 bg-black/30 relative scroll-mt-20 overflow-hidden text-left">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
           <div className="relative flex justify-center lg:justify-start">
             <div className="relative group">
-               <div className="w-80 h-[550px] glass-card rounded-[4rem] border-orange-500/20 flex flex-col items-center justify-end p-12 overflow-hidden shadow-2xl">
-                  <div className="w-20 h-1 bg-orange-500 mb-8 rounded-full"></div>
-                  <div className="text-center z-10">
-                      <p className="text-[10px] font-black tracking-[0.4em] text-orange-500 uppercase mb-4">Gümba Yana</p>
-                      <p className="text-sm text-gray-400 font-medium italic">"L'équilibre entre ludique et professionnel."</p>
+               {/* Container for LogoFormatVertical.jpeg */}
+               <div className="w-80 h-[550px] glass-card rounded-[4rem] border-orange-500/20 flex flex-col items-center justify-center p-4 overflow-hidden shadow-2xl relative transition-all duration-500 group-hover:border-orange-500/40">
+                  <img 
+                    src="./LogoFormatVertical.jpeg" 
+                    alt="Gümba Yana Vertical Logo" 
+                    className="w-full h-full object-cover rounded-[3.5rem] opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-12 text-center z-10 px-8">
+                      <p className="text-[10px] font-black tracking-[0.4em] text-orange-500 uppercase mb-4">ADN Gümba Yana</p>
+                      <p className="text-sm text-white font-medium italic drop-shadow-md">"L'équilibre entre ludique et professionnel."</p>
                   </div>
                </div>
-               <div className="absolute -top-16 left-1/2 -translate-x-1/2 text-[12rem] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] transition-transform group-hover:scale-110 duration-500 pointer-events-none">👨🏾‍🦳</div>
+               {/* Background Glow */}
+               <div className="absolute -z-10 w-full h-full bg-orange-600/20 blur-[80px] rounded-full top-0 scale-75"></div>
             </div>
+            {/* Floating decoration */}
             <div className="absolute -bottom-10 -left-10 text-[8rem] opacity-40 float-anim pointer-events-none delay-700">👵🏾</div>
           </div>
 
@@ -204,9 +212,11 @@ const App: React.FC = () => {
             <div className="p-8 md:p-20 text-left">
               {/* Contenu spécifique Yana */}
               {selectedProject.id === 'yana' && (
-                <div className="mb-24 space-y-20">
+                <div className="mb-24 space-y-20 text-left">
                   <div className="p-10 bg-orange-600/10 rounded-[3rem] border border-orange-500/20 flex flex-col md:flex-row items-center gap-12">
-                    <div className="text-8xl drop-shadow-2xl">🦫</div>
+                    <div className="w-48 h-48 rounded-3xl overflow-hidden shadow-2xl flex-shrink-0">
+                       <img src="./Yana.png" alt="Yana Logo" className="w-full h-full object-cover" />
+                    </div>
                     <div className="flex-grow">
                       <h4 className="text-4xl font-black uppercase text-white mb-4 tracking-tighter">Prototype disponible en démo</h4>
                       <p className="text-xl text-orange-400 font-bold mb-6">Redécouvrez nos langues. Reconnectez-vous à votre culture.</p>
@@ -238,29 +248,24 @@ const App: React.FC = () => {
                 </div>
               )}
 
-              {/* Contenu spécifique BaoBloom - STYLE REFONDU SELON CAPTURE */}
+              {/* Contenu spécifique BaoBloom */}
               {selectedProject.id === 'baobloom' && (
-                <div className="mb-24 space-y-24">
-                  {/* Hero BaoBloom mimicking the screenshot */}
+                <div className="mb-24 space-y-24 text-left">
                   <div className="relative rounded-[4rem] overflow-hidden min-h-[600px] flex items-center justify-center p-8 md:p-20 border-8 border-white/10 text-center" 
                        style={{ background: 'linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 40%, #A5D6A7 70%, #4CAF50 100%)' }}>
                     
-                    {/* Clouds */}
                     <div className="absolute top-20 left-10 text-8xl opacity-60">☁️</div>
                     <div className="absolute top-40 right-20 text-7xl opacity-40">☁️</div>
                     
                     <div className="relative z-10 flex flex-col items-center">
-                      {/* Logo-like Title with 3D Pink Style */}
                       <h4 className="text-7xl md:text-[10rem] font-black mb-12 tracking-tight text-white uppercase italic drop-shadow-[0_15px_0_#D81B60] leading-none" 
                           style={{ fontStyle: 'italic', WebkitTextStroke: '2px #D81B60' }}>
                         BAO<br/><span className="text-green-300 drop-shadow-[0_15px_0_#2E7D32]" style={{ WebkitTextStroke: '2px #2E7D32' }}>BLOOM</span>
                       </h4>
 
-                      {/* PLAY BUTTON STYLE MAPPING THE SCREENSHOT */}
                       <a href={selectedProject.playUrl} target="_blank" rel="noopener noreferrer" 
                          className="group relative px-20 py-8 bg-[#8BC34A] hover:bg-[#7CB342] text-white font-black text-5xl uppercase tracking-widest rounded-[3rem] border-[6px] border-[#33691E] shadow-[0_15px_0_#33691E] transition-all transform active:translate-y-2 active:shadow-none inline-block overflow-hidden">
                         <span className="relative z-10 drop-shadow-lg">PLAY</span>
-                        {/* Inner highlight like the screenshot */}
                         <div className="absolute top-1 left-4 right-4 h-6 bg-white/30 rounded-full"></div>
                       </a>
 
@@ -281,66 +286,39 @@ const App: React.FC = () => {
                      <div className="space-y-12">
                         <h5 className="text-5xl font-black uppercase tracking-tighter text-pink-500">Le "Suika" Africain</h5>
                         <p className="text-gray-400 text-xl leading-relaxed">
-                          Inspiré par le hit mondial "Suika Game", BaoBloom réinvente la mécanique de fusion avec une touche culturelle unique. Partez à la découverte des variétés agricoles africaines à travers des niveaux thématiques basés sur les pays du continent.
+                          Inspiré par le hit mondial "Suika Game", BaoBloom réinvente la mécanique de fusion avec une touche culturelle unique.
                         </p>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                            <div className="p-10 bg-white/5 rounded-[3rem] border-b-8 border-[#33691E]">
                               <div className="text-5xl mb-6">🎯</div>
                               <h6 className="font-black text-xs uppercase tracking-widest text-green-500 mb-4">Objectif</h6>
-                              <p className="text-sm text-gray-500">Fusionnez les éléments identiques pour atteindre le fruit final : Le Baobab Géant !</p>
+                              <p className="text-sm text-gray-500">Fusionnez les éléments identiques pour atteindre le fruit final.</p>
                            </div>
                            <div className="p-10 bg-white/5 rounded-[3rem] border-b-8 border-pink-500">
                               <div className="text-5xl mb-6">🌍</div>
                               <h6 className="font-black text-xs uppercase tracking-widest text-pink-400 mb-4">Voyage</h6>
-                              <p className="text-sm text-gray-500">Dbloquez des informations culturelles sur chaque pays traversé.</p>
+                              <p className="text-sm text-gray-500">Débloquez des informations culturelles sur chaque pays.</p>
                            </div>
                         </div>
                      </div>
-                     <div className="relative group">
-                        <div className="absolute inset-0 bg-pink-500/20 blur-[80px] rounded-full group-hover:bg-green-500/20 transition-all"></div>
-                        <img src={selectedProject.imageUrl} className="relative z-10 rounded-[4rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] border-8 border-white/5 transform -rotate-2 group-hover:rotate-0 transition-transform duration-700" alt="BaoBloom Screen" />
+                     <div className="relative group text-center">
+                        <img src="./BaoBloom.jpeg" className="relative z-10 rounded-[4rem] shadow-2xl border-8 border-white/5 mx-auto" alt="BaoBloom Screen" />
                      </div>
-                  </div>
-
-                  <div className="p-16 bg-white/5 rounded-[4rem] border border-white/5 text-center">
-                     <h5 className="text-3xl font-black uppercase mb-20 tracking-widest text-green-400 italic">Fruits de Fusion</h5>
-                     <div className="grid grid-cols-2 md:grid-cols-5 gap-12">
-                        {[
-                          { emoji: "🥬", name: "Chou", color: "text-green-500" },
-                          { emoji: "🍋", name: "Citron", color: "text-yellow-400" },
-                          { emoji: "🌶️", name: "Piment", color: "text-green-600" },
-                          { emoji: "🍌", name: "Banane", color: "text-yellow-500" },
-                          { emoji: "🍉", name: "Pastèque", color: "text-red-500" }
-                        ].map(item => (
-                          <div key={item.name} className="flex flex-col items-center group">
-                            <div className="w-28 h-28 bg-white/5 rounded-full flex items-center justify-center text-6xl mb-6 group-hover:scale-110 transition-transform shadow-inner border-4 border-white/10 group-hover:border-green-500/50">
-                              {item.emoji}
-                            </div>
-                            <span className={`text-xs font-black uppercase tracking-[0.2em] ${item.color}`}>{item.name}</span>
-                          </div>
-                        ))}
-                     </div>
-                  </div>
-
-                  <div className="flex flex-col items-center py-24 border-t border-white/5">
-                     <div className="w-40 h-40 bg-pink-600 rounded-[2.5rem] flex items-center justify-center text-8xl shadow-2xl mb-10 rotate-6 group-hover:rotate-0 transition-transform">🌸</div>
-                     <h5 className="text-3xl font-black uppercase mb-4 italic tracking-tighter">Produit par Gümba Yana</h5>
-                     <p className="text-green-400 font-black uppercase tracking-widest text-xs">Innovation & Divertissement Culturel</p>
                   </div>
                 </div>
               )}
 
               {/* Contenu générique pour les autres projets */}
               {selectedProject.id !== 'yana' && selectedProject.id !== 'baobloom' && selectedProject.details && (
-                <div className="space-y-20">
-                   <div className="grid lg:grid-cols-2 gap-20 items-center">
+                <div className="space-y-20 text-left">
+                   <div className="grid lg:grid-cols-2 gap-20 items-center text-left">
                      <div>
                        <h4 className="text-5xl font-black mb-10 leading-tight tracking-tighter uppercase">{selectedProject.title}</h4>
                        <p className="text-gray-400 text-xl leading-relaxed mb-12">{selectedProject.details.fullDescription}</p>
                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                          {selectedProject.details.features.map(f => (
-                           <div key={f.title} className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                           <div key={f.title} className="p-8 bg-white/5 rounded-3xl border border-white/5 text-left">
                              <div className="text-4xl mb-6">{f.icon}</div>
                              <h5 className="text-lg font-bold mb-4 uppercase">{f.title}</h5>
                              <p className="text-gray-500 text-sm leading-relaxed">{f.description}</p>
@@ -352,7 +330,7 @@ const App: React.FC = () => {
                        </a>
                      </div>
                      <div className="relative">
-                        <img src={selectedProject.details.heroImage} className="rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" alt={selectedProject.title} />
+                        <img src={selectedProject.details.heroImage} className="rounded-[3rem] shadow-2xl" alt={selectedProject.title} />
                      </div>
                    </div>
                 </div>
@@ -363,7 +341,7 @@ const App: React.FC = () => {
       )}
 
       {/* Section Contact */}
-      <section id="services" className="py-40 px-6 bg-black/50 border-t border-orange-500/5 relative overflow-hidden scroll-mt-20">
+      <section id="services" className="py-40 px-6 bg-black/50 border-t border-orange-500/5 relative overflow-hidden scroll-mt-20 text-left">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <h2 className="text-6xl font-black mb-6 tracking-tighter text-gradient uppercase">Démarrer une <br/>Collaboration</h2>
@@ -392,12 +370,18 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-24 px-6 border-t border-orange-500/10 bg-black/40">
+      {/* Footer with LogoFormatHorizental.jpeg */}
+      <footer className="py-24 px-6 border-t border-orange-500/10 bg-black/40 text-left">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 text-center mb-16">
             <div className="flex items-center space-x-4">
-              <div className="w-14 h-14 bg-orange-600 rounded-2xl flex items-center justify-center text-3xl shadow-lg">🌳</div>
+              <div className="h-14 w-auto overflow-hidden rounded-xl bg-white/5 p-1 shadow-lg border border-white/10">
+                <img 
+                  src="./LogoFormatHorizental.jpeg" 
+                  alt="Gümba Yana Logo" 
+                  className="h-full w-auto object-contain"
+                />
+              </div>
               <div className="text-3xl font-black tracking-tighter uppercase">GÜMBA <span className="text-orange-500">YANA</span></div>
             </div>
             

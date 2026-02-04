@@ -8,11 +8,11 @@ export const PROJECTS: Project[] = [
     type: 'Application Ludo-éducative',
     objective: 'Apprendre nos langues, préserver notre culture.',
     description: "Wolof, Peulh, Sérère, Diola, Soninké... Redécouvrez la richesse du Sénégal avec Bayo, votre compagnon d'apprentissage.",
-    imageUrl: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: './Yana.png',
     target: 'Diaspora, Jeunes, Voyageurs',
     playUrl: '#waitlist',
     details: {
-      heroImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2000&auto=format&fit=crop',
+      heroImage: './Yana.png',
       videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1738-large.mp4',
       fullDescription: "Redécouvrez nos langues. Reconnectez-vous à votre culture. Yana propose une application simple, moderne et progressive pour maîtriser les langues nationales à travers des micro-leçons et des contenus créés par des linguistes.",
       features: [
@@ -50,11 +50,11 @@ export const PROJECTS: Project[] = [
     type: 'Jeu Mobile Culturel',
     objective: 'Faire découvrir les cultures historiques du Sénégal.',
     description: "Voyage à travers les royaumes du Sénégal via des énigmes inspirées des proverbes et traditions.",
-    imageUrl: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: './CaxCaxett.jpeg',
     target: 'Jeunes, Familles',
     playUrl: 'https://play.google.com/store/apps/details?id=com.GHS.CaxCaxett',
     details: {
-        heroImage: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=2000&auto=format&fit=crop',
+        heroImage: './CaxCaxett.jpeg',
         fullDescription: "Cax Caaxett propose une immersion ludique dans les cultures historiques du Sénégal. Devine. Apprends. Découvre.",
         features: [
           { title: "Enigmes", description: "Basées sur les proverbes et mythes locaux.", icon: "🎭" },
