@@ -8,11 +8,11 @@ export const PROJECTS: Project[] = [
     type: 'Application Ludo-éducative',
     objective: 'Apprendre nos langues, préserver notre culture.',
     description: "Wolof, Peulh, Sérère, Diola, Soninké... Redécouvrez la richesse du Sénégal avec Bayo, votre compagnon d'apprentissage.",
-    imageUrl: './Yana.png',
+    imageUrl: '/Yana.png',
     target: 'Diaspora, Jeunes, Voyageurs',
     playUrl: '#waitlist',
     details: {
-      heroImage: './Yana.png',
+      heroImage: '/Yana.png',
       videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1738-large.mp4',
       fullDescription: "Redécouvrez nos langues. Reconnectez-vous à votre culture. Yana propose une application simple, moderne et progressive pour maîtriser les langues nationales à travers des micro-leçons et des contenus créés par des linguistes.",
       features: [
@@ -50,11 +50,11 @@ export const PROJECTS: Project[] = [
     type: 'Jeu Mobile Culturel',
     objective: 'Faire découvrir les cultures historiques du Sénégal.',
     description: "Voyage à travers les royaumes du Sénégal via des énigmes inspirées des proverbes et traditions.",
-    imageUrl: './CaxCaxett.jpeg',
+    imageUrl: '/CaxCaxett.jpeg',
     target: 'Jeunes, Familles',
     playUrl: 'https://play.google.com/store/apps/details?id=com.GHS.CaxCaxett',
     details: {
-        heroImage: './CaxCaxett.jpeg',
+        heroImage: '/CaxCaxett.jpeg',
         fullDescription: "Cax Caaxett propose une immersion ludique dans les cultures historiques du Sénégal. Devine. Apprends. Découvre.",
         features: [
           { title: "Enigmes", description: "Basées sur les proverbes et mythes locaux.", icon: "🎭" },
@@ -70,11 +70,11 @@ export const PROJECTS: Project[] = [
     type: 'Jeu de Puzzle',
     objective: 'Valoriser la richesse agricole africaine.',
     description: "Jeu de fusion stratégique explorant la biodiversité de 5 pays africains. Fusionnez fruits et légumes pour découvrir des trésors agricoles !",
-    imageUrl: './BaoBloom.jpeg',
+    imageUrl: '/BaoBloom.jpeg',
     target: 'Grand Public, Casual',
     playUrl: 'https://play.google.com/store/apps/details?id=com.MarsIndustrie.BaoBloom',
     details: {
-        heroImage: './BaoBloom.jpeg',
+        heroImage: '/BaoBloom.jpeg',
         fullDescription: "BaoBloom est un jeu de puzzle 'fusion' vibrant qui célèbre l'agriculture du continent. Combinez les fruits pour les faire grandir et explorez les marchés colorés du Sénégal, du Maroc et bien d'autres.",
         features: [
           { title: "Fusion Fruitée", description: "De la petite graine à la pastèque géante.", icon: "🍉" },

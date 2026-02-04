@@ -97,10 +97,9 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
           <div className="relative flex justify-center lg:justify-start">
             <div className="relative group">
-               {/* Container for LogoFormatVertical.jpeg */}
                <div className="w-80 h-[550px] glass-card rounded-[4rem] border-orange-500/20 flex flex-col items-center justify-center p-4 overflow-hidden shadow-2xl relative transition-all duration-500 group-hover:border-orange-500/40">
                   <img 
-                    src="./LogoFormatVertical.jpeg" 
+                    src="/LogoFormatVertical.jpeg" 
                     alt="Gümba Yana Vertical Logo" 
                     className="w-full h-full object-cover rounded-[3.5rem] opacity-90 group-hover:opacity-100 transition-opacity"
                   />
@@ -110,10 +109,8 @@ const App: React.FC = () => {
                       <p className="text-sm text-white font-medium italic drop-shadow-md">"L'équilibre entre ludique et professionnel."</p>
                   </div>
                </div>
-               {/* Background Glow */}
                <div className="absolute -z-10 w-full h-full bg-orange-600/20 blur-[80px] rounded-full top-0 scale-75"></div>
             </div>
-            {/* Floating decoration */}
             <div className="absolute -bottom-10 -left-10 text-[8rem] opacity-40 float-anim pointer-events-none delay-700">👵🏾</div>
           </div>
 
@@ -215,7 +212,7 @@ const App: React.FC = () => {
                 <div className="mb-24 space-y-20 text-left">
                   <div className="p-10 bg-orange-600/10 rounded-[3rem] border border-orange-500/20 flex flex-col md:flex-row items-center gap-12">
                     <div className="w-48 h-48 rounded-3xl overflow-hidden shadow-2xl flex-shrink-0">
-                       <img src="./Yana.png" alt="Yana Logo" className="w-full h-full object-cover" />
+                       <img src="/Yana.png" alt="Yana Logo" className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-grow">
                       <h4 className="text-4xl font-black uppercase text-white mb-4 tracking-tighter">Prototype disponible en démo</h4>
@@ -303,7 +300,7 @@ const App: React.FC = () => {
                         </div>
                      </div>
                      <div className="relative group text-center">
-                        <img src="./BaoBloom.jpeg" className="relative z-10 rounded-[4rem] shadow-2xl border-8 border-white/5 mx-auto" alt="BaoBloom Screen" />
+                        <img src="/BaoBloom.jpeg" className="relative z-10 rounded-[4rem] shadow-2xl border-8 border-white/5 mx-auto" alt="BaoBloom Screen" />
                      </div>
                   </div>
                 </div>
@@ -370,14 +367,14 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer with LogoFormatHorizental.jpeg */}
+      {/* Footer */}
       <footer className="py-24 px-6 border-t border-orange-500/10 bg-black/40 text-left">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 text-center mb-16">
             <div className="flex items-center space-x-4">
               <div className="h-14 w-auto overflow-hidden rounded-xl bg-white/5 p-1 shadow-lg border border-white/10">
                 <img 
-                  src="./LogoFormatHorizental.jpeg" 
+                  src="/LogoFormatHorizental.jpeg" 
                   alt="Gümba Yana Logo" 
                   className="h-full w-auto object-contain"
                 />

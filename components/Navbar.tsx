@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center space-x-3 group cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <div className="h-12 w-auto overflow-hidden rounded-lg transition-transform group-hover:scale-105 duration-300">
               <img 
-                src="./LogoFormatHorizental.jpeg" 
+                src="/LogoFormatHorizental.jpeg" 
                 alt="Gümba Yana Logo" 
                 className="h-full w-auto object-contain"
               />
