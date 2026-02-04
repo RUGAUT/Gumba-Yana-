@@ -84,62 +84,58 @@ const App: React.FC = () => {
             </a>
           </div>
         </div>
-        
-        <div className="absolute -bottom-20 -right-20 md:right-0 opacity-20 md:opacity-100 pointer-events-none transition-all duration-1000 transform hover:scale-105">
-           <div className="text-[20rem] md:text-[30rem] float-anim drop-shadow-[0_20px_50px_rgba(249,115,22,0.4)]">👩🏾‍💼</div>
-        </div>
-
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-orange-600/5 blur-[120px] rounded-full z-0"></div>
       </section>
 
-      {/* Section ADN (About) with Vertical Logo */}
+      {/* Section ADN (About) with LARGE HORIZONTAL LOGO */}
       <section id="about" className="py-40 px-6 bg-black/30 relative scroll-mt-20 overflow-hidden text-left">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
-          <div className="relative flex justify-center lg:justify-start">
-            <div className="relative group">
-               <div className="w-80 h-[550px] glass-card rounded-[4rem] border-orange-500/20 flex flex-col items-center justify-center p-4 overflow-hidden shadow-2xl relative transition-all duration-500 group-hover:border-orange-500/40">
-                  <img 
-                    src="/LogoFormatVertical.jpeg" 
-                    alt="Gümba Yana Vertical Logo" 
-                    className="w-full h-full object-cover rounded-[3.5rem] opacity-90 group-hover:opacity-100 transition-opacity"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-12 text-center z-10 px-8">
-                      <p className="text-[10px] font-black tracking-[0.4em] text-orange-500 uppercase mb-4">ADN Gümba Yana</p>
-                      <p className="text-sm text-white font-medium italic drop-shadow-md">"L'équilibre entre ludique et professionnel."</p>
-                  </div>
-               </div>
-               <div className="absolute -z-10 w-full h-full bg-orange-600/20 blur-[80px] rounded-full top-0 scale-75"></div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-5 gap-20 items-center">
+            {/* Logo Container - Taking 3 columns to be larger and horizontal */}
+            <div className="lg:col-span-3 relative flex justify-center">
+              <div className="relative group w-full">
+                 <div className="w-full h-[300px] md:h-[450px] glass-card rounded-[3rem] border-orange-500/20 flex flex-col items-center justify-center p-2 overflow-hidden shadow-2xl relative transition-all duration-500 group-hover:border-orange-500/40">
+                    <img 
+                      src="/LogoFormatVertical.jpeg" 
+                      alt="Gümba Yana horizontal logo" 
+                      className="w-full h-full object-contain md:object-cover rounded-[2.5rem] opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
+                    <div className="absolute bottom-10 left-10 text-left z-10 px-8">
+                        <p className="text-[10px] font-black tracking-[0.4em] text-orange-500 uppercase mb-2">ADN Gümba Yana</p>
+                        <p className="text-lg text-white font-black italic drop-shadow-md">"Le jeu est un outil sérieux."</p>
+                    </div>
+                 </div>
+                 <div className="absolute -z-10 w-full h-full bg-orange-600/20 blur-[100px] rounded-full top-0"></div>
+              </div>
             </div>
-            <div className="absolute -bottom-10 -left-10 text-[8rem] opacity-40 float-anim pointer-events-none delay-700">👵🏾</div>
-          </div>
 
-          <div className="text-left">
-            <h2 className="text-5xl font-black mb-10 tracking-tight text-gradient uppercase">Notre ADN</h2>
-            <div className="space-y-8">
-              <p className="text-lg text-gray-300 leading-relaxed font-bold">
-                L’ADN de Gümba Yana repose sur une conviction forte : le jeu est un outil sérieux de transmission, d’apprentissage et d’engagement.
-              </p>
-              <p className="text-gray-400 leading-relaxed">
-                Nous concevons des expériences où le ludique rencontre le pédagogique, où la technologie dialogue avec la culture, et où la créativité devient un levier d’impact durable.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
-                <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
-                   <h4 className="text-orange-400 font-black uppercase text-xs mb-3">🎮 Langage Universel</h4>
-                   <p className="text-xs text-gray-500">Le jeu est un outil méthodologique pour sensibiliser et mobiliser.</p>
-                </div>
-                <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
-                   <h4 className="text-orange-400 font-black uppercase text-xs mb-3">🧠 Rigueur Pédagogique</h4>
-                   <p className="text-xs text-gray-500">Apprentissage par l'expérience, l'interaction et l'émotion.</p>
-                </div>
-                <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
-                   <h4 className="text-orange-400 font-black uppercase text-xs mb-3">🌍 Ancrage Culturel</h4>
-                   <p className="text-xs text-gray-500">Valoriser les richesses africaines avec modernité sans stéréotypes.</p>
-                </div>
-                <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
-                   <h4 className="text-orange-400 font-black uppercase text-xs mb-3">🚀 Innovation Utile</h4>
-                   <p className="text-xs text-gray-500">IA et digital au service du sens et de l'impact social.</p>
+            {/* Content Container - Taking 2 columns */}
+            <div className="lg:col-span-2 text-left">
+              <h2 className="text-5xl font-black mb-10 tracking-tight text-gradient uppercase">Notre ADN</h2>
+              <div className="space-y-8">
+                <p className="text-lg text-gray-300 leading-relaxed font-bold">
+                  L’ADN de Gümba Yana repose sur une conviction forte : le jeu est un outil sérieux de transmission, d’apprentissage et d’engagement.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  Nous concevons des expériences où le ludique rencontre le pédagogique, où la technologie dialogue avec la culture.
+                </p>
+                
+                <div className="grid grid-cols-1 gap-6 pt-6">
+                  <div className="p-6 bg-white/5 rounded-2xl border border-white/5 flex items-center gap-4">
+                     <span className="text-3xl">🎮</span>
+                     <div>
+                       <h4 className="text-orange-400 font-black uppercase text-xs">Langage Universel</h4>
+                       <p className="text-[10px] text-gray-500">Sensibiliser et mobiliser par l'interaction.</p>
+                     </div>
+                  </div>
+                  <div className="p-6 bg-white/5 rounded-2xl border border-white/5 flex items-center gap-4">
+                     <span className="text-3xl">🧠</span>
+                     <div>
+                       <h4 className="text-orange-400 font-black uppercase text-xs">Rigueur Pédagogique</h4>
+                       <p className="text-[10px] text-gray-500">Apprentissage par l'émotion et l'expérience.</p>
+                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -151,18 +147,14 @@ const App: React.FC = () => {
       <section id="expertise" className="py-40 px-6 relative overflow-hidden scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-24 gap-8">
-            <div className="text-left">
-              <h2 className="text-5xl font-black mb-4 tracking-tighter text-gradient uppercase">Expertises</h2>
-            </div>
-            <div className="flex items-center space-x-6 glass-card px-8 py-4 rounded-full border-orange-500/10">
-               <div className="text-5xl drop-shadow-lg">👩🏾‍🔬</div>
-            </div>
+            <h2 className="text-5xl font-black tracking-tighter text-gradient uppercase">Expertises</h2>
+            <div className="text-5xl float-anim">👩🏾‍🔬</div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {EXPERTISES.map((exp) => (
-              <div key={exp.title} className="glass-card p-12 rounded-[2.5rem] group relative overflow-hidden">
-                <div className="text-5xl mb-10 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">{exp.icon}</div>
-                <h3 className="text-xl font-black mb-8 text-white uppercase tracking-tight leading-tight">{exp.title}</h3>
+              <div key={exp.title} className="glass-card p-12 rounded-[2.5rem] group hover:bg-white/[0.04]">
+                <div className="text-5xl mb-10 opacity-50 group-hover:opacity-100 transition-opacity">{exp.icon}</div>
+                <h3 className="text-xl font-black mb-8 text-white uppercase tracking-tight">{exp.title}</h3>
                 <ul className="space-y-4">
                   {exp.items.map(item => (
                     <li key={item} className="flex items-start text-gray-400 text-sm font-medium">
@@ -182,9 +174,9 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto text-left">
           <div className="mb-24 flex justify-between items-end">
              <h2 className="text-5xl font-black mb-6 tracking-tighter text-gradient uppercase">Produits <br/>& Projets</h2>
-             <div className="text-7xl float-anim mb-4 hidden md:block">👩🏾‍🎨</div>
+             <div className="text-7xl float-anim mb-4 hidden md:block">🎨</div>
           </div>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {PROJECTS.map(project => (
               <ProjectCard 
                 key={project.id} 
@@ -196,140 +188,60 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Overlay Détail Projet */}
+      {/* Overlay Détail Projet - Layout adaptatif pour format vertical */}
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 animate-fade-in">
           <div className="absolute inset-0 bg-black/95 backdrop-blur-2xl" onClick={closeOverlay}></div>
-          <div className="relative w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-[#0a0807] rounded-[3rem] border border-orange-500/10 shadow-2xl glass-card animate-scale-up">
+          <div className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-[#0a0807] rounded-[3rem] border border-orange-500/10 shadow-2xl glass-card animate-scale-up">
             <div className="sticky top-0 z-20 flex justify-between items-center p-8 bg-[#0a0807]/90 backdrop-blur-md border-b border-white/5">
-              <h3 className="text-2xl font-black tracking-tighter uppercase">{selectedProject.title}</h3>
-              <button onClick={closeOverlay} className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-600/20 transition-colors border border-white/10 text-white font-bold">✕</button>
+              <h3 className="text-xl font-black tracking-tighter uppercase">{selectedProject.title}</h3>
+              <button onClick={closeOverlay} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-orange-600/20 transition-colors border border-white/10 text-white font-bold">✕</button>
             </div>
 
-            <div className="p-8 md:p-20 text-left">
-              {/* Contenu spécifique Yana */}
-              {selectedProject.id === 'yana' && (
-                <div className="mb-24 space-y-20 text-left">
-                  <div className="p-10 bg-orange-600/10 rounded-[3rem] border border-orange-500/20 flex flex-col md:flex-row items-center gap-12">
-                    <div className="w-48 h-48 rounded-3xl overflow-hidden shadow-2xl flex-shrink-0">
-                       <img src="/Yana.png" alt="Yana Logo" className="w-full h-full object-cover" />
-                    </div>
-                    <div className="flex-grow">
-                      <h4 className="text-4xl font-black uppercase text-white mb-4 tracking-tighter">Prototype disponible en démo</h4>
-                      <p className="text-xl text-orange-400 font-bold mb-6">Redécouvrez nos langues. Reconnectez-vous à votre culture.</p>
-                      <p className="text-gray-400 leading-relaxed mb-10 max-w-2xl">Wolof, Peulh, Sérère, Diola, Soninké... Redécouvrez la richesse du Sénégal avec Bayo, votre compagnon d'apprentissage.</p>
-                      <div className="flex flex-wrap gap-4">
-                         <a href="#waitlist-yana" className="px-10 py-5 bg-orange-600 text-white font-black text-xs uppercase tracking-widest rounded-full shadow-xl shadow-orange-950/40">Rejoindre la liste</a>
-                         <button className="px-10 py-5 bg-white/5 border border-white/10 text-white font-black text-xs uppercase tracking-widest rounded-full">Voir la solution</button>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Demo IA Interactif Yana */}
-                  <div className="mb-20">
-                     <YanaAIDemo />
-                  </div>
-
-                  <div id="waitlist-yana" className="p-16 bg-white/5 rounded-[4rem] border border-orange-500/20 text-center relative overflow-hidden">
-                    <h4 className="text-4xl font-black uppercase mb-6">Rejoignez l'aventure !</h4>
-                    <form className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                       <div className="md:col-span-2">
-                          <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-4 mb-2 block">Email</label>
-                          <input type="email" placeholder="votre@email.com" required className="w-full px-8 py-5 bg-black/60 rounded-2xl border border-white/10 outline-none focus:border-orange-500 transition-all" />
-                       </div>
-                       <div className="md:col-span-2 pt-6">
-                          <button className="w-full py-7 bg-orange-600 hover:bg-orange-500 text-white font-black rounded-full uppercase text-xs tracking-[0.3em] shadow-2xl transition-all">Rejoindre la liste d'attente</button>
-                       </div>
-                    </form>
-                  </div>
+            <div className="p-8 md:p-16 text-left">
+              <div className="grid md:grid-cols-2 gap-16 items-start">
+                {/* Vertical Image Display like a phone mockup */}
+                <div className="relative flex justify-center">
+                   <div className="w-full max-w-[320px] aspect-[9/16] bg-black rounded-[3rem] border-8 border-white/5 shadow-2xl overflow-hidden relative">
+                      <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-full object-cover" />
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-black rounded-b-2xl"></div> {/* Notch */}
+                   </div>
                 </div>
-              )}
 
-              {/* Contenu spécifique BaoBloom */}
-              {selectedProject.id === 'baobloom' && (
-                <div className="mb-24 space-y-24 text-left">
-                  <div className="relative rounded-[4rem] overflow-hidden min-h-[600px] flex items-center justify-center p-8 md:p-20 border-8 border-white/10 text-center" 
-                       style={{ background: 'linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 40%, #A5D6A7 70%, #4CAF50 100%)' }}>
-                    
-                    <div className="absolute top-20 left-10 text-8xl opacity-60">☁️</div>
-                    <div className="absolute top-40 right-20 text-7xl opacity-40">☁️</div>
-                    
-                    <div className="relative z-10 flex flex-col items-center">
-                      <h4 className="text-7xl md:text-[10rem] font-black mb-12 tracking-tight text-white uppercase italic drop-shadow-[0_15px_0_#D81B60] leading-none" 
-                          style={{ fontStyle: 'italic', WebkitTextStroke: '2px #D81B60' }}>
-                        BAO<br/><span className="text-green-300 drop-shadow-[0_15px_0_#2E7D32]" style={{ WebkitTextStroke: '2px #2E7D32' }}>BLOOM</span>
-                      </h4>
-
-                      <a href={selectedProject.playUrl} target="_blank" rel="noopener noreferrer" 
-                         className="group relative px-20 py-8 bg-[#8BC34A] hover:bg-[#7CB342] text-white font-black text-5xl uppercase tracking-widest rounded-[3rem] border-[6px] border-[#33691E] shadow-[0_15px_0_#33691E] transition-all transform active:translate-y-2 active:shadow-none inline-block overflow-hidden">
-                        <span className="relative z-10 drop-shadow-lg">PLAY</span>
-                        <div className="absolute top-1 left-4 right-4 h-6 bg-white/30 rounded-full"></div>
-                      </a>
-
-                      <p className="mt-16 text-2xl text-[#1B5E20] font-black uppercase tracking-tighter drop-shadow-sm max-w-2xl italic">
-                        "Fusionnez les fruits pour débloquer les richesses de l'Afrique !"
-                      </p>
-                    </div>
-
-                    <div className="absolute bottom-0 right-0 w-full h-full opacity-30 pointer-events-none flex justify-center items-end">
-                       <div className="absolute bottom-20 left-10 text-9xl float-anim">🍉</div>
-                       <div className="absolute bottom-40 right-20 text-9xl float-anim delay-1000">🍌</div>
-                       <div className="absolute top-40 left-1/4 text-7xl float-anim delay-500">🌶️</div>
-                       <div className="absolute bottom-1/2 right-1/4 text-6xl float-anim delay-700">🥬</div>
-                    </div>
-                  </div>
-
-                  <div className="grid lg:grid-cols-2 gap-24 items-center">
-                     <div className="space-y-12">
-                        <h5 className="text-5xl font-black uppercase tracking-tighter text-pink-500">Le "Suika" Africain</h5>
-                        <p className="text-gray-400 text-xl leading-relaxed">
-                          Inspiré par le hit mondial "Suika Game", BaoBloom réinvente la mécanique de fusion avec une touche culturelle unique.
-                        </p>
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                           <div className="p-10 bg-white/5 rounded-[3rem] border-b-8 border-[#33691E]">
-                              <div className="text-5xl mb-6">🎯</div>
-                              <h6 className="font-black text-xs uppercase tracking-widest text-green-500 mb-4">Objectif</h6>
-                              <p className="text-sm text-gray-500">Fusionnez les éléments identiques pour atteindre le fruit final.</p>
-                           </div>
-                           <div className="p-10 bg-white/5 rounded-[3rem] border-b-8 border-pink-500">
-                              <div className="text-5xl mb-6">🌍</div>
-                              <h6 className="font-black text-xs uppercase tracking-widest text-pink-400 mb-4">Voyage</h6>
-                              <p className="text-sm text-gray-500">Débloquez des informations culturelles sur chaque pays.</p>
+                <div className="space-y-8">
+                   <h4 className="text-4xl font-black uppercase text-white tracking-tighter">{selectedProject.title}</h4>
+                   <p className="text-xl text-orange-400 font-bold uppercase tracking-widest text-xs">{selectedProject.type}</p>
+                   <p className="text-gray-400 leading-relaxed text-lg">{selectedProject.details?.fullDescription || selectedProject.description}</p>
+                   
+                   <div className="space-y-6 pt-6">
+                      {selectedProject.details?.features.map(f => (
+                        <div key={f.title} className="flex gap-4 items-start p-4 bg-white/5 rounded-2xl border border-white/5">
+                           <span className="text-3xl">{f.icon}</span>
+                           <div>
+                              <h5 className="font-black uppercase text-xs text-white mb-1">{f.title}</h5>
+                              <p className="text-[11px] text-gray-500 leading-tight">{f.description}</p>
                            </div>
                         </div>
-                     </div>
-                     <div className="relative group text-center">
-                        <img src="/BaoBloom.jpeg" className="relative z-10 rounded-[4rem] shadow-2xl border-8 border-white/5 mx-auto" alt="BaoBloom Screen" />
-                     </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Contenu générique pour les autres projets */}
-              {selectedProject.id !== 'yana' && selectedProject.id !== 'baobloom' && selectedProject.details && (
-                <div className="space-y-20 text-left">
-                   <div className="grid lg:grid-cols-2 gap-20 items-center text-left">
-                     <div>
-                       <h4 className="text-5xl font-black mb-10 leading-tight tracking-tighter uppercase">{selectedProject.title}</h4>
-                       <p className="text-gray-400 text-xl leading-relaxed mb-12">{selectedProject.details.fullDescription}</p>
-                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                         {selectedProject.details.features.map(f => (
-                           <div key={f.title} className="p-8 bg-white/5 rounded-3xl border border-white/5 text-left">
-                             <div className="text-4xl mb-6">{f.icon}</div>
-                             <h5 className="text-lg font-bold mb-4 uppercase">{f.title}</h5>
-                             <p className="text-gray-500 text-sm leading-relaxed">{f.description}</p>
-                           </div>
-                         ))}
-                       </div>
-                       <a href={selectedProject.playUrl} className="inline-block px-12 py-5 bg-orange-600 hover:bg-orange-500 text-white font-black text-xs uppercase tracking-widest rounded-full transition-all shadow-xl shadow-orange-950/40">
-                         {selectedProject.details.ctaText}
-                       </a>
-                     </div>
-                     <div className="relative">
-                        <img src={selectedProject.details.heroImage} className="rounded-[3rem] shadow-2xl" alt={selectedProject.title} />
-                     </div>
+                      ))}
                    </div>
+
+                   <div className="pt-8 flex flex-col gap-4">
+                      {selectedProject.playUrl && (
+                        <a href={selectedProject.playUrl} target="_blank" className="w-full py-6 bg-orange-600 hover:bg-orange-500 text-white font-black rounded-full text-center uppercase text-xs tracking-[0.3em] transition-all shadow-xl shadow-orange-950/40">
+                          {selectedProject.details?.ctaText || "Lancer l'expérience"}
+                        </a>
+                      )}
+                      <button onClick={closeOverlay} className="w-full py-6 bg-white/5 hover:bg-white/10 text-white font-black rounded-full uppercase text-xs tracking-[0.3em] transition-all border border-white/10">
+                        Fermer
+                      </button>
+                   </div>
+                </div>
+              </div>
+
+              {/* Specific AI Demo for Yana */}
+              {selectedProject.id === 'yana' && (
+                <div className="mt-20 pt-20 border-t border-white/5">
+                   <YanaAIDemo />
                 </div>
               )}
             </div>
@@ -346,19 +258,19 @@ const App: React.FC = () => {
 
           <div id="contact" className="glass-card p-8 md:p-20 rounded-[4rem] border-orange-500/10 shadow-2xl relative scroll-mt-32">
             {formSubmitted ? (
-              <div className="text-center py-20 animate-fade-in">
-                <div className="w-24 h-24 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center mx-auto mb-10 text-5xl shadow-[0_0_30px_rgba(249,115,22,0.3)]">🌳</div>
+              <div className="text-center py-20">
+                <div className="w-24 h-24 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center mx-auto mb-10 text-5xl">🌳</div>
                 <h3 className="text-3xl font-black mb-4 uppercase">Message Transmis</h3>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-12 text-left">
+              <form onSubmit={handleSubmit} className="space-y-12">
                 <div className="grid md:grid-cols-2 gap-10">
                    <div className="space-y-3">
                     <label className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] ml-4">Email</label>
-                    <input type="email" placeholder="votre@email.com" required className="w-full px-8 py-6 bg-white/5 border border-white/10 rounded-3xl outline-none text-white focus:border-orange-500/50 transition-all font-medium" />
+                    <input type="email" placeholder="votre@email.com" required className="w-full px-8 py-6 bg-white/5 border border-white/10 rounded-3xl outline-none text-white focus:border-orange-500/50 transition-all" />
                   </div>
                 </div>
-                <button type="submit" className="w-full py-8 bg-orange-600 hover:bg-orange-500 text-white font-black rounded-full text-xs uppercase tracking-[0.4em] transition-all shadow-2xl shadow-orange-950/40 transform hover:scale-[1.01]">
+                <button type="submit" className="w-full py-8 bg-orange-600 hover:bg-orange-500 text-white font-black rounded-full text-xs uppercase tracking-[0.4em] transition-all shadow-2xl shadow-orange-950/40">
                   Envoyer ma Demande
                 </button>
               </form>
@@ -372,26 +284,15 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 text-center mb-16">
             <div className="flex items-center space-x-4">
-              <div className="h-14 w-auto overflow-hidden rounded-xl bg-white/5 p-1 shadow-lg border border-white/10">
-                <img 
-                  src="/LogoFormatHorizental.jpeg" 
-                  alt="Gümba Yana Logo" 
-                  className="h-full w-auto object-contain"
-                />
+              <div className="h-14 w-auto overflow-hidden rounded-xl bg-white/5 p-1 border border-white/10">
+                <img src="/LogoFormatHorizental.jpeg" alt="Gümba Yana Logo" className="h-full w-auto object-contain" />
               </div>
               <div className="text-3xl font-black tracking-tighter uppercase">GÜMBA <span className="text-orange-500">YANA</span></div>
             </div>
             
             <div className="flex space-x-6">
               {socialLinks.map((social) => (
-                <a 
-                  key={social.name} 
-                  href={social.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white hover:text-orange-500 hover:border-orange-500 transition-all transform hover:scale-110"
-                  aria-label={social.name}
-                >
+                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white hover:text-orange-500 hover:border-orange-500 transition-all transform hover:scale-110">
                   {social.icon}
                 </a>
               ))}
