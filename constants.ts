@@ -24,26 +24,6 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    id: 'quizz-mines-solo',
-    title: 'Quizz des Mines',
-    type: 'Serious Game',
-    objective: 'Tester ses connaissances géologiques.',
-    description: "Testez vos connaissances sur les enjeux et l'histoire géologique du pays à travers un parcours interactif et pédagogique.",
-    imageUrl: '/Quiz.png',
-    target: 'Étudiants, Professionnels, Curieux',
-    aspect: 'vertical',
-    playUrl: 'http://quizz-sgns.my.canva.site/',
-    details: {
-      heroImage: '/Quiz.png',
-      fullDescription: "Le Quizz des Mines est un outil d'évaluation ludique conçu pour vulgariser les connaissances sur le secteur minier sénégalais.",
-      features: [
-        { title: "Multi-thématiques", description: "Histoire, géologie, économie minière.", icon: "📚" },
-        { title: "Feedback immédiat", description: "Apprenez de vos erreurs avec des explications détaillées.", icon: "💡" }
-      ],
-      ctaText: "Jouer au Quizz"
-    }
-  },
-  {
     id: 'sgns-package',
     title: 'Serious Game SGNS',
     type: 'Package Serious Games',

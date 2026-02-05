@@ -152,11 +152,11 @@ const App: React.FC = () => {
 
       <section id="projects" className="py-40 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto text-left">
-          <div className="mb-24 flex justify-between items-end">
+          <div className="mb-16 flex justify-between items-end">
              <h2 className="text-5xl font-black mb-6 tracking-tighter text-gradient uppercase">Produits <br/>& Projets</h2>
-             <div className="text-7xl float-anim mb-4 hidden md:block">📱</div>
+             <div className="text-5xl float-anim mb-4 hidden md:block">📱</div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {PROJECTS.map(project => (
               <ProjectCard 
                 key={project.id} 
@@ -184,7 +184,7 @@ const App: React.FC = () => {
                   <div className="max-w-2xl">
                     <h2 className="text-5xl font-black mb-8 tracking-tighter uppercase">{selectedProject.title}</h2>
                     <p className="text-gray-400 text-lg leading-relaxed mb-10">{selectedProject.details.fullDescription}</p>
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                         <span className="px-6 py-2 bg-orange-600/10 text-orange-500 text-[10px] font-black uppercase tracking-widest rounded-full border border-orange-500/20">Objectif: {selectedProject.objective}</span>
                         <span className="px-6 py-2 bg-white/5 text-gray-400 text-[10px] font-black uppercase tracking-widest rounded-full border border-white/10">Public: {selectedProject.target}</span>
                     </div>
