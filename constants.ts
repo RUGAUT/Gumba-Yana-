@@ -13,7 +13,6 @@ export const PROJECTS: Project[] = [
     playUrl: '#waitlist',
     details: {
       heroImage: '/Yana.png',
-      videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1738-large.mp4',
       fullDescription: "Redécouvrez nos langues. Reconnectez-vous à votre culture. Yana propose une application simple, moderne et progressive pour maîtriser les langues nationales à travers des micro-leçons et des contenus créés par des linguistes.",
       features: [
         { title: "Micro-leçons", description: "Quelques minutes par jour pour progresser via quiz et répétitions.", icon: "📝" },
@@ -25,23 +24,43 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    id: 'sgns-serious-games',
-    title: 'Serious Games SGNS',
-    type: 'Projet Institutionnel',
-    objective: 'Sensibilisation aux mines et à la géologie.',
-    description: "Suite de serious games éducatifs conçus pour le Service Géologique National du Sénégal lors du SIM 2025.",
-    imageUrl: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=1000&auto=format&fit=crop',
-    target: 'Public Institutionnel, Étudiants',
-    playUrl: 'https://itch.io/profile/gumba-yana',
+    id: 'guide-mineur',
+    title: 'Guide du Mineur',
+    type: 'Jeu Éducatif Rapide',
+    objective: 'Valoriser les richesses minières du Sénégal.',
+    description: "Associez chaque minerai à son utilisation quotidienne dans ce serious game pédagogique conçu pour sensibiliser aux ressources du sous-sol.",
+    imageUrl: '/GuideMineur.jpeg',
+    target: 'Écoles, Étudiants, Grand Public',
+    playUrl: 'https://gumba-yana.itch.io/associe-le-minerai-son-utilite',
     details: {
-      heroImage: 'https://images.unsplash.com/photo-1517404212770-903f10165006?q=80&w=2000&auto=format&fit=crop',
-      fullDescription: "Dans le cadre du SIM 2025, nous avons développé pour le Service Géologique National du Sénégal (SGNS) une suite de serious games interactifs.",
+      heroImage: '/GuideMineur.jpeg',
+      fullDescription: "Le Guide du Mineur est une expérience interactive où l'utilisateur doit relier les minerais extraits au Sénégal à leurs produits finis. Un excellent outil pour comprendre l'impact de l'industrie minière sur notre quotidien.",
       features: [
-        { title: "Quiz Mines", description: "Testez vos connaissances sur la géologie du Sénégal.", icon: "📝", playUrl: "https://quizz-sgns.my.canva.site/" },
-        { title: "Associe le Minerai", description: "Mini-jeu de glisser-déposer reliant minerais et usages.", icon: "🔗", playUrl: "https://gumba-yana.itch.io/associe-le-minerai-son-utilite" },
-        { title: "Puzzle Géologique", description: "Reconstitution de la carte minière en temps limité.", icon: "🧩", playUrl: "https://gumba-yana.itch.io/puzzle-gologique-sgsn" }
+        { title: "Apprentissage Actif", description: "Mémorisez les ressources minières par l'association visuelle.", icon: "💎" },
+        { title: "Fiches Info", description: "Découvrez les propriétés de chaque minerai après chaque réussite.", icon: "📚" },
+        { title: "Score & Temps", description: "Testez votre rapidité pour devenir un expert géologue.", icon: "⏱️" }
       ],
-      ctaText: "Consulter le projet"
+      ctaText: "Jouer au Guide"
+    }
+  },
+  {
+    id: 'puzzle-mineur',
+    title: 'Puzzle du Mineur',
+    type: 'Puzzle Game Géographique',
+    objective: 'Maîtriser la localisation des richesses minières.',
+    description: "Reconstituez la carte des ressources minières du Sénégal. Un jeu de placement stratégique pour maîtriser la géographie de notre sous-sol.",
+    imageUrl: '/PuzzleSN.png',
+    target: 'Étudiants, Professionnels, Curieux',
+    playUrl: 'https://gumba-yana.itch.io/puzzle-gologique-sgsn',
+    details: {
+      heroImage: '/PuzzleSN.png',
+      fullDescription: "Le Puzzle du Mineur demande de la précision et de la connaissance. Placez chaque gisement au bon endroit sur la carte du Sénégal pour débloquer des informations stratégiques sur les régions minières.",
+      features: [
+        { title: "Cartographie Interactive", description: "Apprenez les zones d'extraction majeures du pays.", icon: "🗺️" },
+        { title: "Placement Précis", description: "Une mécanique de puzzle classique appliquée à la géologie.", icon: "🧩" },
+        { title: "Récompenses", description: "Gagnez des badges pour chaque région complétée sans erreur.", icon: "🏆" }
+      ],
+      ctaText: "Résoudre le Puzzle"
     }
   },
   {
