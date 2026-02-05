@@ -29,12 +29,12 @@ export const PROJECTS: Project[] = [
     type: 'Serious Game',
     objective: 'Tester ses connaissances géologiques.',
     description: "Testez vos connaissances sur les enjeux et l'histoire géologique du pays à travers un parcours interactif et pédagogique.",
-    imageUrl: '/GuideMineur.jpeg',
+    imageUrl: '/Quiz.png',
     target: 'Étudiants, Professionnels, Curieux',
     aspect: 'vertical',
     playUrl: 'http://quizz-sgns.my.canva.site/',
     details: {
-      heroImage: '/GuideMineur.jpeg',
+      heroImage: '/Quiz.png',
       fullDescription: "Le Quizz des Mines est un outil d'évaluation ludique conçu pour vulgariser les connaissances sur le secteur minier sénégalais.",
       features: [
         { title: "Multi-thématiques", description: "Histoire, géologie, économie minière.", icon: "📚" },
@@ -49,11 +49,11 @@ export const PROJECTS: Project[] = [
     type: 'Package Serious Games',
     objective: 'Valoriser les richesses minières du Sénégal.',
     description: "Conçu pour le Service Géologique National du Sénégal (SGNS) pour l'animation de leur stand à l'occasion du Salon International des Mines (SIM) 2025, ces jeux permettent de découvrir le secteur minier sénégalais de manière ludique et pédagogique.",
-    imageUrl: '/GuideMineur.jpeg',
+    imageUrl: '/SGNS.png',
     target: 'Institutions, Écoles, Professionnels',
     aspect: 'vertical',
     details: {
-      heroImage: '/GuideMineur.jpeg',
+      heroImage: '/SGNS.png',
       fullDescription: "Conçu pour le Service Géologique National du Sénégal (SGNS) pour l'animation de leur stand à l'occasion du Salon International des Mines (SIM) 2025, ces jeux permettent de découvrir le secteur minier sénégalais de manière ludique et pédagogique.",
       features: [],
       subProjects: [
