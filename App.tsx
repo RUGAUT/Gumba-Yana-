@@ -78,7 +78,7 @@ const App: React.FC = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-orange-600/5 blur-[120px] rounded-full z-0"></div>
       </section>
 
-      {/* Section ADN (About) - RESTAURATION COMPLÈTE */}
+      {/* Section ADN (About) */}
       <section id="about" className="py-40 px-6 bg-black/30 relative scroll-mt-20 overflow-hidden text-left">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-20 items-center">
@@ -87,7 +87,7 @@ const App: React.FC = () => {
                  <div className="w-full h-[350px] md:h-[500px] glass-card rounded-[3rem] border-orange-500/20 flex flex-col items-center justify-center p-2 overflow-hidden shadow-2xl relative transition-all duration-500 group-hover:border-orange-500/40">
                     <img 
                       src="/LogoFormatVertical.jpeg" 
-                      alt="Gümba Yana horizontal vision" 
+                      alt="Gümba Yana vertical vision" 
                       className="w-full h-full object-contain md:object-cover rounded-[2.5rem] opacity-95 group-hover:opacity-100 transition-opacity"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
@@ -124,11 +124,11 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Expertise & Projets */}
-      <section id="expertise" className="py-40 px-6 relative overflow-hidden scroll-mt-20">
+      {/* Services Section */}
+      <section id="services" className="py-40 px-6 relative overflow-hidden scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-24 gap-8">
-            <h2 className="text-5xl font-black tracking-tighter text-gradient uppercase">Expertises</h2>
+            <h2 className="text-5xl font-black tracking-tighter text-gradient uppercase">Nos Services</h2>
             <div className="text-5xl float-anim">👩🏾‍🔬</div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
@@ -168,7 +168,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Overlay Détail Projet - Format Package / Single Jeu */}
+      {/* Overlay Détail Projet */}
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 animate-fade-in">
           <div className="absolute inset-0 bg-black/95 backdrop-blur-2xl" onClick={closeOverlay}></div>
@@ -179,7 +179,6 @@ const App: React.FC = () => {
             </div>
 
             <div className="p-8 md:p-16 text-left">
-              {/* Si c'est un Package (comme SGNS) */}
               {selectedProject.details?.subProjects ? (
                 <div className="space-y-16">
                   <div className="max-w-2xl">
@@ -207,7 +206,6 @@ const App: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                /* Format Jeu Individuel Classique */
                 <div className="grid md:grid-cols-2 gap-16 items-start">
                   <div className="relative flex justify-center">
                     <div className={`w-full ${selectedProject.aspect === 'horizontal' ? 'aspect-video' : 'max-w-[340px] aspect-[9/16]'} bg-black rounded-[3rem] border-[10px] border-white/10 shadow-2xl overflow-hidden relative`}>
@@ -257,14 +255,14 @@ const App: React.FC = () => {
         </div>
       )}
 
-      {/* Section Contact - RESTAURATION COMPLÈTE À 8 CHAMPS */}
-      <section id="services" className="py-40 px-6 bg-black/50 border-t border-orange-500/5 relative overflow-hidden scroll-mt-20 text-left">
+      {/* Section Contact / Collaboration */}
+      <section id="contact" className="py-40 px-6 bg-black/50 border-t border-orange-500/5 relative overflow-hidden scroll-mt-20 text-left">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <h2 className="text-6xl font-black mb-6 tracking-tighter text-gradient uppercase">Démarrer une <br/>Collaboration</h2>
           </div>
 
-          <div id="contact" className="glass-card p-8 md:p-20 rounded-[4rem] border-orange-500/10 shadow-2xl relative scroll-mt-32">
+          <div className="glass-card p-8 md:p-20 rounded-[4rem] border-orange-500/10 shadow-2xl relative">
             {formSubmitted ? (
               <div className="text-center py-20 animate-fade-in">
                 <div className="w-24 h-24 bg-orange-500/20 text-orange-400 rounded-full flex items-center justify-center mx-auto mb-10 text-5xl">✨</div>
@@ -298,6 +296,7 @@ const App: React.FC = () => {
                     <label className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] ml-4">Service souhaité</label>
                     <select className="w-full px-8 py-5 bg-white/5 border border-white/10 rounded-2xl outline-none text-gray-400 focus:border-orange-500/50 transition-all font-medium text-sm appearance-none">
                       <option>Prise de contact</option>
+                      <option>Organisation d'activités/evenements</option>
                       <option>Conception de Serious Game</option>
                       <option>Projet Ludo-éducatif</option>
                       <option>Gamification de programme</option>

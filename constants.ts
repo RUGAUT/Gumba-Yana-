@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
     imageUrl: '/Yana.png',
     target: 'Diaspora, Jeunes, Voyageurs',
     aspect: 'vertical',
-    playUrl: '#waitlist',
+    playUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdzG60SiukygZu7W35vJE0R0LddPiNC4BNVkA2i5VLhSjZ44w/viewform',
     details: {
       heroImage: '/Yana.png',
       fullDescription: "Redécouvrez nos langues. Reconnectez-vous à votre culture. Yana propose une application simple, moderne et progressive pour maîtriser les langues nationales à travers des micro-leçons et des contenus créés par des linguistes.",
@@ -20,47 +20,27 @@ export const PROJECTS: Project[] = [
         { title: "Culture & Contexte", description: "Mini-histoires et proverbes illustrés pour découvrir les valeurs.", icon: "🎭" },
         { title: "Prononciation guidée", description: "S'entraîner à dire correctement les mots grâce à des voix natives.", icon: "🗣️" }
       ],
-      ctaText: "Rejoindre la liste d'attente"
+      ctaText: "Rejoindre La liste D'attente"
     }
   },
   {
-    id: 'guide-mineur-solo',
-    title: 'Guide du Mineur',
+    id: 'quizz-mines-solo',
+    title: 'Quizz des Mines',
     type: 'Serious Game',
-    objective: 'Valoriser les richesses minières du Sénégal.',
-    description: "Associez chaque minerai à son utilisation quotidienne dans ce serious game pédagogique conçu pour sensibiliser aux ressources du sous-sol.",
+    objective: 'Tester ses connaissances géologiques.',
+    description: "Testez vos connaissances sur les enjeux et l'histoire géologique du pays à travers un parcours interactif et pédagogique.",
     imageUrl: '/GuideMineur.jpeg',
-    target: 'Écoles, Étudiants, Grand Public',
+    target: 'Étudiants, Professionnels, Curieux',
     aspect: 'vertical',
-    playUrl: 'https://gumba-yana.itch.io/associe-le-minerai-son-utilite',
+    playUrl: 'http://quizz-sgns.my.canva.site/',
     details: {
       heroImage: '/GuideMineur.jpeg',
-      fullDescription: "Le Guide du Mineur est une expérience interactive où l'utilisateur doit relier les minerais extraits au Sénégal à leurs produits finis.",
+      fullDescription: "Le Quizz des Mines est un outil d'évaluation ludique conçu pour vulgariser les connaissances sur le secteur minier sénégalais.",
       features: [
-        { title: "Apprentissage Actif", description: "Mémorisez les ressources minières par l'association visuelle.", icon: "💎" },
-        { title: "Fiches Info", description: "Découvrez les propriétés de chaque minerai.", icon: "📚" }
+        { title: "Multi-thématiques", description: "Histoire, géologie, économie minière.", icon: "📚" },
+        { title: "Feedback immédiat", description: "Apprenez de vos erreurs avec des explications détaillées.", icon: "💡" }
       ],
-      ctaText: "Jouer au Guide"
-    }
-  },
-  {
-    id: 'puzzle-mineur-solo',
-    title: 'Puzzle du Mineur',
-    type: 'Serious Game',
-    objective: 'Maîtriser la localisation des richesses minières.',
-    description: "Reconstituez la carte des ressources minières du Sénégal. Un jeu de placement stratégique pour maîtriser la géographie de notre sous-sol.",
-    imageUrl: '/PuzzleSN.png',
-    target: 'Étudiants, Professionnels, Curieux',
-    aspect: 'horizontal',
-    playUrl: 'https://gumba-yana.itch.io/puzzle-gologique-sgsn',
-    details: {
-      heroImage: '/PuzzleSN.png',
-      fullDescription: "Le Puzzle du Mineur demande de la précision et de la connaissance. Placez chaque gisement au bon endroit sur la carte du Sénégal.",
-      features: [
-        { title: "Cartographie", description: "Apprenez les zones d'extraction majeures du pays.", icon: "🗺️" },
-        { title: "Placement Précis", description: "Une mécanique de puzzle appliquée à la géologie.", icon: "🧩" }
-      ],
-      ctaText: "Résoudre le Puzzle"
+      ctaText: "Jouer au Quizz"
     }
   },
   {
@@ -68,13 +48,13 @@ export const PROJECTS: Project[] = [
     title: 'Serious Game SGNS',
     type: 'Package Serious Games',
     objective: 'Valoriser les richesses minières du Sénégal.',
-    description: "Une suite d'expériences interactives conçue pour le Salon Géologique National du Sénégal (SGNS) afin de sensibiliser aux ressources du sous-sol.",
+    description: "Conçu pour le Service Géologique National du Sénégal (SGNS) pour l'animation de leur stand à l'occasion du Salon International des Mines (SIM) 2025, ces jeux permettent de découvrir le secteur minier sénégalais de manière ludique et pédagogique.",
     imageUrl: '/GuideMineur.jpeg',
     target: 'Institutions, Écoles, Professionnels',
     aspect: 'vertical',
     details: {
       heroImage: '/GuideMineur.jpeg',
-      fullDescription: "Conçus pour le Ministère des Mines et de la Géologie, ces jeux permettent de découvrir le secteur minier sénégalais de manière ludique et pédagogique.",
+      fullDescription: "Conçu pour le Service Géologique National du Sénégal (SGNS) pour l'animation de leur stand à l'occasion du Salon International des Mines (SIM) 2025, ces jeux permettent de découvrir le secteur minier sénégalais de manière ludique et pédagogique.",
       features: [],
       subProjects: [
         {
@@ -96,7 +76,7 @@ export const PROJECTS: Project[] = [
           title: 'QUIZZ DES MINES',
           description: "Testez vos connaissances sur les enjeux et l'histoire géologique du pays.",
           icon: '❓',
-          playUrl: '#'
+          playUrl: 'http://quizz-sgns.my.canva.site/'
         }
       ],
       ctaText: "Découvrir le package"
