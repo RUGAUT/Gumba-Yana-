@@ -3,7 +3,16 @@ export interface Feature {
   title: string;
   description: string;
   icon: string;
-  playUrl?: string; // Lien direct pour jouer au mini-jeu spécifique
+  playUrl?: string; 
+}
+
+export interface SubProject {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+  playUrl: string;
+  icon?: string;
 }
 
 export interface ProjectDetail {
@@ -11,6 +20,7 @@ export interface ProjectDetail {
   videoUrl?: string;
   fullDescription: string;
   features: Feature[];
+  subProjects?: SubProject[]; // Pour le format "Package" vu en screenshot
   ctaText: string;
 }
 
@@ -22,8 +32,8 @@ export interface Project {
   description: string;
   imageUrl: string;
   target: string;
-  aspect?: 'vertical' | 'horizontal'; // Ratio d'affichage préféré
-  playUrl?: string; // Lien global pour jouer/télécharger le projet
+  aspect?: 'vertical' | 'horizontal'; 
+  playUrl?: string; 
   details?: ProjectDetail;
 }
 
