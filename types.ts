@@ -22,6 +22,7 @@ export interface Project {
   description: string;
   imageUrl: string;
   target: string;
+  aspect?: 'vertical' | 'horizontal'; // Ratio d'affichage préféré
   playUrl?: string; // Lien global pour jouer/télécharger le projet
   details?: ProjectDetail;
 }

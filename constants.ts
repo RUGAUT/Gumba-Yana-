@@ -10,6 +10,7 @@ export const PROJECTS: Project[] = [
     description: "Wolof, Peulh, Sérère, Diola, Soninké... Redécouvrez la richesse du Sénégal avec Bayo, votre compagnon d'apprentissage.",
     imageUrl: '/Yana.png',
     target: 'Diaspora, Jeunes, Voyageurs',
+    aspect: 'vertical',
     playUrl: '#waitlist',
     details: {
       heroImage: '/Yana.png',
@@ -31,6 +32,7 @@ export const PROJECTS: Project[] = [
     description: "Associez chaque minerai à son utilisation quotidienne dans ce serious game pédagogique conçu pour sensibiliser aux ressources du sous-sol.",
     imageUrl: '/GuideMineur.jpeg',
     target: 'Écoles, Étudiants, Grand Public',
+    aspect: 'vertical',
     playUrl: 'https://gumba-yana.itch.io/associe-le-minerai-son-utilite',
     details: {
       heroImage: '/GuideMineur.jpeg',
@@ -51,6 +53,7 @@ export const PROJECTS: Project[] = [
     description: "Reconstituez la carte des ressources minières du Sénégal. Un jeu de placement stratégique pour maîtriser la géographie de notre sous-sol.",
     imageUrl: '/PuzzleSN.png',
     target: 'Étudiants, Professionnels, Curieux',
+    aspect: 'horizontal',
     playUrl: 'https://gumba-yana.itch.io/puzzle-gologique-sgsn',
     details: {
       heroImage: '/PuzzleSN.png',
@@ -71,6 +74,7 @@ export const PROJECTS: Project[] = [
     description: "Voyage à travers les royaumes du Sénégal via des énigmes inspirées des proverbes et traditions.",
     imageUrl: '/CaxCaxett.jpeg',
     target: 'Jeunes, Familles',
+    aspect: 'vertical',
     playUrl: 'https://play.google.com/store/apps/details?id=com.GHS.CaxCaxett',
     details: {
         heroImage: '/CaxCaxett.jpeg',
@@ -91,6 +95,7 @@ export const PROJECTS: Project[] = [
     description: "Jeu de fusion stratégique explorant la biodiversité de 5 pays africains. Fusionnez fruits et légumes pour découvrir des trésors agricoles !",
     imageUrl: '/BaoBloom.jpeg',
     target: 'Grand Public, Casual',
+    aspect: 'vertical',
     playUrl: 'https://play.google.com/store/apps/details?id=com.MarsIndustrie.BaoBloom',
     details: {
         heroImage: '/BaoBloom.jpeg',

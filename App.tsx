@@ -188,7 +188,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Overlay Détail Projet - Adapté au format téléphone VERTICAL */}
+      {/* Overlay Détail Projet */}
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 animate-fade-in">
           <div className="absolute inset-0 bg-black/95 backdrop-blur-2xl" onClick={closeOverlay}></div>
@@ -200,12 +200,21 @@ const App: React.FC = () => {
 
             <div className="p-8 md:p-16 text-left">
               <div className="grid md:grid-cols-2 gap-16 items-start">
-                {/* Image verticale format smartphone */}
+                {/* Image adaptative selon le format (smartphone vs tablette) */}
                 <div className="relative flex justify-center">
-                   <div className="w-full max-w-[340px] aspect-[9/16] bg-black rounded-[3.5rem] border-[10px] border-white/10 shadow-2xl overflow-hidden relative">
-                      <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-full object-cover" />
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-black rounded-b-3xl"></div> {/* Mockup Notch */}
-                   </div>
+                   {selectedProject.aspect === 'horizontal' ? (
+                     // Format Tablette / Horizontal
+                     <div className="w-full aspect-video bg-black rounded-[2.5rem] border-[10px] border-white/10 shadow-2xl overflow-hidden relative">
+                        <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-full object-cover" />
+                        <div className="absolute top-1/2 left-2 -translate-y-1/2 w-1.5 h-8 bg-white/10 rounded-full"></div> {/* Tablet side button */}
+                     </div>
+                   ) : (
+                     // Format Smartphone / Vertical
+                     <div className="w-full max-w-[340px] aspect-[9/16] bg-black rounded-[3.5rem] border-[10px] border-white/10 shadow-2xl overflow-hidden relative">
+                        <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-full object-cover" />
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-black rounded-b-3xl"></div> {/* Mockup Notch */}
+                     </div>
+                   )}
                 </div>
 
                 <div className="space-y-8">

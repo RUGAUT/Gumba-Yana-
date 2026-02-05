@@ -8,10 +8,12 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+  const isHorizontal = project.aspect === 'horizontal';
+
   return (
-    <div className="glass-card rounded-[2.5rem] overflow-hidden group h-full flex flex-col border-orange-500/10 hover:border-orange-500/40">
-      {/* Aspect ratio vertical 9:16 pour s'adapter au format téléphone */}
-      <div className="relative aspect-[9/16] overflow-hidden cursor-pointer" onClick={() => onClick(project)}>
+    <div className={`glass-card rounded-[2.5rem] overflow-hidden group h-full flex flex-col border-orange-500/10 hover:border-orange-500/40 ${isHorizontal ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+      {/* Ratio dynamique selon le type de projet */}
+      <div className={`relative ${isHorizontal ? 'aspect-video' : 'aspect-[9/16]'} overflow-hidden cursor-pointer`} onClick={() => onClick(project)}>
         <img 
           src={project.imageUrl} 
           alt={project.title}
